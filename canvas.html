@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>Canvas Fundamentals</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext("2d");
+
+            //Draw a rectangle
+            ctx.fillStyle = 'Green';
+            ctx.fillRect(0, 0, 200, 100);
+
+            //Draw a circle
+            ctx.arc(100, 200, 50, 0, 2 * Math.PI, false);
+            ctx.fillStyle = 'Navy';
+            ctx.fill();
+
+            //Draw an arc
+            ctx.beginPath();
+            ctx.arc(100, 300, 50, 0, Math.PI, false);
+            ctx.fillStyle = 'Navy';
+            ctx.fill();
+
+            //Draw lines
+            ctx.beginPath();
+            ctx.moveTo(100, 400);
+            ctx.lineTo(50, 500);
+            ctx.lineTo(150, 500);
+            ctx.lineTo(100, 400);
+            ctx.strokeStyle = 'Red';
+            ctx.lineWidth = 5;
+            ctx.stroke();
+            ctx.fillStyle = 'Yellow';
+            ctx.fill();
+        };
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+</body>
+</html>
