@@ -1,0 +1,7 @@
+#mask-overlay{
+  border-radius:50%;
+  box-shadow:0 0 0 9999px rgba(0,0,0,.6);
+  height:120px;
+  width:120px;
+  position:absolute;
+}
